@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles/mendeleev_table.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#chromium").load("Elements/cr.html");
+            $("#hydrogenium").load("Elements/h.html");
+            $("#lithium").load("Elements/li.html");
+            $("#helium").load("Elements/he.html");
+            $("#berillium").load("Elements/be.html");
+            $("#bor").load("Elements/b.html");
+            $("#carbon").load("Elements/c.html");
+        });
+    </script>
+</head>
+
+<body>
+<div>
+    <table class="elementTable">
+        <caption>
+            <h1>Периоди́ческая систе́ма хими́ческих элеме́нтов (табли́ца Менделе́ева)</h1>
+        </caption>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>I</td>
+            <td>II</td>
+            <td>III</td>
+            <td>IV</td>
+            <td>V</td>
+            <td>VI</td>
+            <td>VII</td>
+            <td colspan="4">VIII</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>I</td>
+            <td class="pink">
+                <div id="hydrogenium"></div>
+            </td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="pink">
+                <div id="helium"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>II</td>
+            <td class="pink">
+                <div id="lithium"></div>
+            </td>
+            <td class="pink">
+                <div id="berillium"></div>
+            </td>
+            <td class="metals">
+                <div id="bor"></div>
+            </td>
+            <td class="metals">
+                <div id="carbon"></div>
+            </td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="metals">Symb</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>III</td>
+            <td class="pink">Symb</td>
+            <td class="pink">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="metals">Symb</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td rowspan="2">IV</td>
+            <td class="pink">Symb</td>
+            <td class="pink">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">
+                <div id="chromium"></div>
+            </td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="metals">Symb</td>
+        </tr>
+        <tr>
+            <td rowspan="2">5</td>
+            <td rowspan="2">V</td>
+            <td class="pink">Symb</td>
+            <td class="pink">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="metals">Symb</td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td>
+            <td rowspan="2">VI</td>
+            <td class="pink">Symb</td>
+            <td class="pink">Symb</td>
+            <td class="green">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td class="metals">Symb</td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="metals">Symb</td>
+        </tr>
+        <tr>
+            <td rowspan="2">7</td>
+            <td rowspan="2">VII</td>
+            <td class="pink">Symb</td>
+            <td class="pink">Symb</td>
+            <td class="green">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td class="blue">Symb</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>
