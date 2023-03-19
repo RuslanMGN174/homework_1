@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/inputs.css">
+</head>
+
+<body>
+<form action="#">
+    <div class="inputs">
+        <p>
+        <div class="label">
+            <label for="text">Имя пользователя: </label>
+        </div>
+        <input type="text" id="text">
+        <p>
+        <div class="label">
+            <label for="email">Email: </label>
+        </div>
+        <input type="email" id="email" required>
+        <p>
+        <div class="label">
+            <label for="select">Что вы изучаете? </label>
+        </div>
+        <select name="#" id="select">
+            <option value="htlm">HTML</option>
+            <option value="php">PHP</option>
+            <option value="js">JavaScript</option>
+        </select>
+        <p>
+        <fieldset>
+            <legend>
+                Хочу быть...
+            </legend>
+            <input type="radio" name="wantToBe" value="juniorphp">Junior PHP Developer
+            <input type="radio" name="wantToBe" value="midphp">Middle PHP Developer
+            <input type="radio" name="wantToBe" value="frontend">Front-end разработчик
+            <input type="radio" name="wantToBe" value="design">Неее, хочу быть дизайнером
+        </fieldset>
+        <p>
+        <fieldset>
+            <legend>
+                Мои навыки в программировании
+            </legend>
+            <input type="checkbox" name="skills" value="goddev">Бог программирования
+            <input type="checkbox" name="skills" value="gurudev">Гуру программирования
+            <input type="checkbox" name="skills" value="studentdev">Эм... я еще учусь
+        </fieldset>
+        <p>
+        <div class="wishesLabel">
+            <label for="time">Во сколько мне удобно приходить на занятия? </label>
+        </div>
+        <input type="time" id="time">
+        <p>
+        <div class="wishesLabel center">
+            <label for="wishes">
+                Мои пожелания и комментарии по курсам:
+            </label>
+        </div>
+        <textarea name="wishes" id="wishes" cols="30" rows="5"></textarea>
+        <p class="submitBtn">
+            <input type="submit" value="Все, я справился с заполнением формы">
+        </p>
+    </div>
+</form>
+</body>
+
+</html>
