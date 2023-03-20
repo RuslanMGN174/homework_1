@@ -1,22 +1,27 @@
+div:not(.inputs) {
+    margin: 1em 0;
+}
+
 .inputs {
     height: 500px;
     width: 800px;
 }
 
-.label {
-    width: 150px;
+label, .wishesLabel{
     float: left;
     text-align: right;
+}
+
+label {
+    width: 150px;
 }
 
 .wishesLabel {
     width: 320px;
-    float: left;
-    text-align: right;
 }
 
 .center {
-    height: 81px;
+    height: 4rem;
     display: flex;
     margin: auto;
     align-items: center;
@@ -28,9 +33,28 @@
 #select,
 #wishes,
 #time {
-    margin-left: 10px;
+    margin-left: 0.5em;
 }
 
-.submitBtn {
+.button {
     text-align: center;
+}
+
+.btn {
+    border: 2px solid #3498db;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin: 1em;
+    padding: 1.2em 2.8em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: gray;
 }

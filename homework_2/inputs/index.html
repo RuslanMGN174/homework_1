@@ -10,63 +10,54 @@
 </head>
 
 <body>
-<form action="#">
-    <div class="inputs">
-        <p>
-        <div class="label">
+<div class="inputs">
+    <form action="#">
+        <div class="name">
             <label for="text">Имя пользователя: </label>
+            <input type="text" id="text">
         </div>
-        <input type="text" id="text">
-        <p>
-        <div class="label">
+        <div class="email">
             <label for="email">Email: </label>
+            <input type="email" id="email" required>
         </div>
-        <input type="email" id="email" required>
-        <p>
-        <div class="label">
+        <div class="study">
             <label for="select">Что вы изучаете? </label>
+            <select name="#" id="select">
+                <option value="htlm">HTML</option>
+                <option value="php">PHP</option>
+                <option value="js">JavaScript</option>
+            </select>
         </div>
-        <select name="#" id="select">
-            <option value="htlm">HTML</option>
-            <option value="php">PHP</option>
-            <option value="js">JavaScript</option>
-        </select>
-        <p>
-        <fieldset>
-            <legend>
-                Хочу быть...
-            </legend>
-            <input type="radio" name="wantToBe" value="juniorphp">Junior PHP Developer
-            <input type="radio" name="wantToBe" value="midphp">Middle PHP Developer
-            <input type="radio" name="wantToBe" value="frontend">Front-end разработчик
-            <input type="radio" name="wantToBe" value="design">Неее, хочу быть дизайнером
-        </fieldset>
-        <p>
-        <fieldset>
-            <legend>
-                Мои навыки в программировании
-            </legend>
-            <input type="checkbox" name="skills" value="goddev">Бог программирования
-            <input type="checkbox" name="skills" value="gurudev">Гуру программирования
-            <input type="checkbox" name="skills" value="studentdev">Эм... я еще учусь
-        </fieldset>
-        <p>
-        <div class="wishesLabel">
-            <label for="time">Во сколько мне удобно приходить на занятия? </label>
+        <div>
+            <fieldset>
+                <legend>Хочу быть...</legend>
+                <input type="radio" name="phpJun" value="juniorphp">Junior PHP Developer
+                <input type="radio" name="phpMid" value="midphp">Middle PHP Developer
+                <input type="radio" name="fe" value="frontend">Front-end разработчик
+                <input type="radio" name="dsgn" value="design">Неее, хочу быть дизайнером
+            </fieldset>
         </div>
-        <input type="time" id="time">
-        <p>
-        <div class="wishesLabel center">
-            <label for="wishes">
-                Мои пожелания и комментарии по курсам:
-            </label>
+        <div>
+            <fieldset>
+                <legend>Мои навыки в программировании</legend>
+                <input type="checkbox" name="god" value="goddev">Бог программирования
+                <input type="checkbox" name="guru" value="gurudev">Гуру программирования
+                <input type="checkbox" name="student" value="studentdev">Эм... я еще учусь
+            </fieldset>
         </div>
-        <textarea name="wishes" id="wishes" cols="30" rows="5"></textarea>
-        <p class="submitBtn">
-            <input type="submit" value="Все, я справился с заполнением формы">
-        </p>
-    </div>
-</form>
+        <div>
+            <label class="wishesLabel" for="time">Во сколько мне удобно приходить на занятия? </label>
+            <input type="time" id="time">
+        </div>
+        <div>
+            <label class="wishesLabel center" for="wishes">Мои пожелания и комментарии по курсам:</label>
+            <textarea name="wishes" id="wishes" cols="30" rows="5"></textarea>
+        </div>
+        <div class="button">
+            <input type="submit" value="Все, я справился с заполнением формы" class="btn">
+        </div>
+    </form>
+</div>
 </body>
 
 </html>
