@@ -151,6 +151,7 @@ sftp-config.json
 .idea/modules.xml
 .idea/vsc.xml
 .idea/jarRepositories.xml
+.idea/*.xml
 .idea/compiler.xml
 .idea/libraries/
 *.iws

@@ -1,0 +1,36 @@
+.inputs {
+    height: 500px;
+    width: 800px;
+}
+
+.label {
+    width: 150px;
+    float: left;
+    text-align: right;
+}
+
+.wishesLabel {
+    width: 320px;
+    float: left;
+    text-align: right;
+}
+
+.center {
+    height: 81px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: right;
+}
+
+#email,
+#text,
+#select,
+#wishes,
+#time {
+    margin-left: 10px;
+}
+
+.submitBtn {
+    text-align: center;
+}

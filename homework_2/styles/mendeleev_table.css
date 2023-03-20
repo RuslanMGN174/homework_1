@@ -1,0 +1,35 @@
+.elementTable {
+    border: 1px;
+    border-collapse: collapse;
+}
+
+tr, td:not(.element, .elSymbol, .elName, .elAtomicWeight) {
+    border: 1px inset;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.blue {
+    background-color: #95cfff;
+}
+
+.pink {
+    background-color: pink;
+}
+.green {
+    background-color: lightgreen;
+}
+
+.metals {
+    background-color: gold;
+}
+
+.element {
+    width: 120px;
+    height: 105px;
+}
+
+.elName, .elSymbol {
+    text-align: right;
+}
