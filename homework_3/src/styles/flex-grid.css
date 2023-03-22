@@ -1,0 +1,109 @@
+@import url('https://fonts.google.com/specimen/Roboto?subset=cyrillic-ext&noto.lang=bg_Cyrl&noto.script=Cyrl');
+
+body {
+    background-color: #2d2e2a;
+}
+
+/*блок с книгами и играми*/
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fvrt-books, .fvrt-games, .fvrt-film {
+    margin: 0 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(41, 120, 230);
+    border-radius: 20px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.title {
+    padding: 10px;
+}
+
+.book, .game, .film {
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid rgb(41, 120, 230);
+    border-radius: 10px;
+    background: rgba(41, 120, 230, 0.1);
+}
+
+.cover {
+    height: 350px;
+    width: 270px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    margin: 20px 0;
+    border: 1px solid rgb(41, 120, 230);
+    width: 270px;
+    height: 20rem;
+}
+
+.title, .description, .film-description {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    color: lightgray;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+p {
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*блок с фильмами*/
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+section.fvrt-film {
+    padding: 20px 10px;
+    border: none;
+}
+
+.film {
+    border: 1px solid rgb(41, 120, 230);
+    height: 800px;
+}
+
+div.film {
+    background: none;
+}
+
+.film-cover {
+    height: 480px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.film-cover img {
+    height: 100%;
+}
+
+
+.film-description p {
+    font-size: 1.1rem;
+}
