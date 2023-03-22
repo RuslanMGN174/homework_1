@@ -1,0 +1,53 @@
+/*задание 2*/
+div {
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+/*задание 3*/
+.container3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3 div {
+    background-color: green;
+}
+
+/*задание 4*/
+.container4 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container4 div {
+    background-color: yellow;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+/*задание 5*/
+.container5 {
+    margin-top: 30px;
+}
+
+.first {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first div {
+    background-color: crimson;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+}
+
