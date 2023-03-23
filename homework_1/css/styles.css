@@ -26,7 +26,21 @@ header {
     align-items: center;
 }
 
-a, a:visited {
+.link {
+    text-align: center;
+    margin: 0 10px;
+    padding: 0;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    color: lightgray;
+}
+
+a:visited {
     text-decoration: none;
     font-weight: 700;
     padding: 10px;
@@ -36,6 +50,7 @@ a, a:visited {
 a:hover {
     border: 1px rgb(41, 120, 230) solid;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .photoFrame {
