@@ -58,7 +58,7 @@ a:hover {
 }
 
 .photo {
-    height: 200px;
+    height: 600px;
     background-image: url(../img/photo.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
