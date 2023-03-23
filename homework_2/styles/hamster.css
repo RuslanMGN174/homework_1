@@ -3,7 +3,7 @@ table, td {
     border-collapse: collapse;
 }
 
-img,p{
-    vertical-align:middle;
-    display:inline-block;
+img {
+    vertical-align: middle;
+    display: inline-block;
 }

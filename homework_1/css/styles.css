@@ -1,83 +1,86 @@
+@import url('https://fonts.google.com/specimen/Roboto?subset=cyrillic-ext&noto.lang=bg_Cyrl&noto.script=Cyrl');
+
 body {
-    background: url(../img/fon.jpg);
+    display: grid;
+    grid-template-areas:
+    "header header "
+    "foto info"
+    "footer footer";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+}
+
+header, footer, section, nav, div {
+    padding: 20px;
+    background: #2d2e2a;
 }
 
 header {
-    height: 100px;
-    border-bottom: 1px solid;
+    grid-area: header;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
 }
 
-header div {
-    margin: 10px;
-}
-
-.logo {
-    width: 100px;
-    height: 72px;
-    background-size: cover;
-    background-image: url(../img/smile.png);
-    background-repeat: no-repeat;
-}
-
 .link {
-    display: block;
-    vertical-align: top;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0;
+    width: 300px;
 }
 
-a, a:visited {
+a {
     text-decoration: none;
-    color: green;
-    padding: 5px 0;
+    font-weight: 700;
+    padding: 10px;
+    color: lightgray;
+}
+
+a:visited {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    color: lightgray;
 }
 
 a:hover {
-    border-bottom: 2px yellow solid;
+    border: 1px rgb(41, 120, 230) solid;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .photoFrame {
-    height: 540px;
-    float: left;
-    width: 30%;
-}
-
-.information {
-    height: 540px;
-    float: left;
-    width: 70%;
-}
-
-.fio {
-    height: 50px;
-    color: green;
-}
-
-.feedback, .personalInfo {
-    height: 490px;
-    float: left;
-    width: 50%;
-}
-
-.footer {
-    height: 100px;
-    float: left;
-    width: 100%;
+    grid-area: foto;
 }
 
 .photo {
-    height: 100%;
+    height: 600px;
     background-image: url(../img/photo.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 40px;
 }
 
-
-p, h1, a {
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-    margin: 10px;
+.fio {
     text-align: center;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+h1, a, .about, .feedback {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    color: lightgray;
+}
+
+footer {
+    grid-area: footer;
 }
