@@ -1,0 +1,35 @@
+.element {
+    height: 200px;
+    width: 300px;
+    background-color: #95cfff;
+}
+
+.chromium {
+    display: grid;
+    grid-template-areas:
+    "left right"
+    "name name";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 1fr;
+    margin: 0;
+}
+
+.leftSection {
+    grid-area: left;
+    font-size: 3rem;
+
+}
+
+.elSymbol {
+    grid-area: right;
+    font-size: 8rem;
+    text-align: end;
+}
+
+.elName {
+    grid-area: name;
+    justify-self: end;
+    font-weight: 700;
+    font-size: 2rem;
+    height: 3rem;
+}
